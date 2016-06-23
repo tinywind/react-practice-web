@@ -1,24 +1,29 @@
 # ReactPracticeWeb
-React js Practice Web site
+* React js Practice Web site
+* HTML template engine: nashorn(react-dom-server)
+* dynamic html: react js  
 
-Using Framework/Tools
+# How to Run
+* run se.olapetersson.ReactiveApplication.class
+* add lobby: http://localhost:8080/lobbies/{lobby-name}
+* and see adding lobby: http://localhost:8080 
+* delete lobby: http://localhost:8080/lobbies/{lobby-name}/clear
+
+# Using Framework/Tools
 * spring-boot
 * jpa
 * h2 database
-* velocity
 * react js
 * lombok
 
 **If fail compile on any IDE, you check the IDE support _lombok_.** 
 
-References
+# References
 * http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle
 * https://facebook.github.io/react/docs/getting-started.html
-* http://velocity.apache.org/engine/releases/velocity-1.5/user-guide.html
-* http://millky.com/@origoni/post/1100
+* https://github.com/griffio/spring-boot-web-nashorn
+* https://github.com/olbpetersson/spring-boot-reactive
 * https://github.com/winterbe/spring-react-example
-* https://spring.io/blog/2015/09/01/react-js-and-spring-data-rest-part-1-basic-features
-
 
 # Why I work this project?
 * `심심해서...`
