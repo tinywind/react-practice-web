@@ -15,9 +15,9 @@
 * h2 database
 * react js
 
-* babel-gen: https://github.com/tinywind/BABEL-GEN
+* babel-gen: https://github.com/tinywind/BABEL-CODEGEN
 
-**_babel-gen_ is not deployed to public maven repository.** 
+**_BABEL-CODEGEN_ is not deployed to public maven repository, yet.** 
 
 * lombok
 
