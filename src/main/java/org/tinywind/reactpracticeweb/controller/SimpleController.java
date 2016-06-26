@@ -1,8 +1,8 @@
-package kr.tinywind.reactpracticeweb.controller;
+package org.tinywind.reactpracticeweb.controller;
 
-import kr.tinywind.reactpracticeweb.model.Comment;
-import kr.tinywind.reactpracticeweb.model.Lobby;
-import kr.tinywind.reactpracticeweb.model.LobbyRepository;
+import org.tinywind.reactpracticeweb.model.Comment;
+import org.tinywind.reactpracticeweb.model.Lobby;
+import org.tinywind.reactpracticeweb.model.LobbyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;

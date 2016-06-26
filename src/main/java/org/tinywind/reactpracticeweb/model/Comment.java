@@ -1,4 +1,4 @@
-package kr.tinywind.reactpracticeweb.model;
+package org.tinywind.reactpracticeweb.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

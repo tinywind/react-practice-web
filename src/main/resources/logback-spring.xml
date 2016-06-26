@@ -17,7 +17,7 @@
         </encoder>
     </appender>
 
-    <logger name="kr.tinywind.reactpracticeweb" level="INFO"/>
+    <logger name="org.tinywind" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
     <logger name="org.apache.velocity" level="INFO"/>
     <logger name="org.hibernate" level="INFO"/>

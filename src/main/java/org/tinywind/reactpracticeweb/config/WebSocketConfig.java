@@ -1,4 +1,4 @@
-package kr.tinywind.reactpracticeweb.config;
+package org.tinywind.reactpracticeweb.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

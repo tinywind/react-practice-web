@@ -1,4 +1,4 @@
-package kr.tinywind.reactpracticeweb;
+package org.tinywind.reactpracticeweb;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

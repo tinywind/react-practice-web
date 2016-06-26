@@ -30,7 +30,7 @@ spring:
 logging:
 # for console logging
   level:
-    kr.tinywind.reactpracticeweb: TRACE
+    org.tinywind: TRACE
     org.springframework: INFO
     org.apache.velocity: INFO
     org.hibernate: INFO

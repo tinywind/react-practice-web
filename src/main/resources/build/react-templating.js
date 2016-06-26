@@ -25,38 +25,3 @@ function renderJsx(template, model) {
     // console.log(jsTemplate);
     return render(jsTemplate, model);
 }
-
-function loadJsxFile(filePath) {
-    try {
-        var BufferedReader = Java.type("java.io.BufferedReader");
-        var FileReader = Java.type("java.io.FileReader");
-        var File = Java.type("java.io.File");
-        var file = new File(filePath);
-        var reader = new BufferedReader(new FileReader(file));
-        var buf = '', line = null;
-        while ((line = reader.readLine()) != null) {
-            buf += line;
-        }
-    } catch (e) {
-        console.log(file.getAbsolutePath());
-        console.log(e);
-    } finally {
-        try {
-            reader.close();
-        } catch (ignored) {
-        }
-    }
-    eval(Babel.transform(buf, {presets: ['react']}).code);
-}
-
-(function () {
-    /* todo: fix file path */
-    /* todo: not effected */
-    var loadingJsx = [
-        'src/main/resources/static/js/playfield.jsx',
-        'src/main/resources/static/js/doms.js'
-    ];
-    loadingJsx.forEach(function (file) {
-        loadJsxFile(file);
-    });
-})();
