@@ -108,17 +108,17 @@
                     <sources>
                         <source>
                             <sourceDir>${project.basedir}/src/main/resources/static/js</sourceDir>
-                            <targetDir>${project.basedir}/src/main/resources/static/js</targetDir>
+                            <targetDir>${project.basedir}/target/classes/static/js</targetDir>
                             <sourceFilePostfix>.jsx</sourceFilePostfix>
                         </source>
                         <source>
                             <sourceDir>${project.basedir}/src/main/resources/build</sourceDir>
-                            <targetDir>${project.basedir}/src/main/resources/build</targetDir>
+                            <targetDir>${project.basedir}/target/classes/build</targetDir>
                             <sourceFilePostfix>.jsx</sourceFilePostfix>
                         </source>
                         <source>
                             <sourceDir>${project.basedir}/src/main/resources/templates</sourceDir>
-                            <targetDir>${project.basedir}/src/main/resources/templates</targetDir>
+                            <targetDir>${project.basedir}/target/classes/templates</targetDir>
                             <sourceFilePostfix>.jsx</sourceFilePostfix>
                         </source>
                     </sources>
