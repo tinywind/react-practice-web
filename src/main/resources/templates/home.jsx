@@ -24,17 +24,30 @@ var CommentList = React.createClass({
 });
 
 React.createClass({
+    containerConstructorString: function () {
+        return "ReactDOM.render(<PlayField />, document.getElementById('container'))";
+    },
     render: function () {
         return (
             <html>
             <Head title={this.props.title}/>
             <body>
-            <h1>{this.props.title}</h1>
             <div>
+                <h1>Render on Server side</h1>
+                <PlayField/>
                 <CommentList comments={this.props.comments}/>
+            </div>
+            <hr/>
+            <hr/>
+            <div>
+                <h1>Render on Client side</h1>
+                <div id="container"></div>
+                <script type="text/babel">
+                    {this.containerConstructorString()}
+                </script>
             </div>
             </body>
             </html>
-        )
+        );
     }
 });

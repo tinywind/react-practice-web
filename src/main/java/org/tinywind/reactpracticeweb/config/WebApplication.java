@@ -37,7 +37,6 @@ public class WebApplication extends WebMvcConfigurerAdapter {
         );
 
         logger.trace("  ScriptTemplateConfigurer configureScript()");
-
         return configurer;
     }
 }

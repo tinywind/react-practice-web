@@ -7,6 +7,10 @@
     <groupId>org.tinywind</groupId>
     <artifactId>react-practice-web</artifactId>
     <version>0.1</version>
+    <packaging>jar</packaging>
+
+    <name>REACT PRACTICE WEB</name>
+    <description>Demo project for React</description>
 
     <licenses>
         <license>
@@ -16,13 +20,6 @@
         </license>
     </licenses>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>org.tinywind.reactpracticeweb.Launcher</start-class>
-        <java.version>1.8</java.version>
-        <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
-    </properties>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -30,15 +27,14 @@
         <relativePath/>
     </parent>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <!--<start-class>org.tinywind.reactpracticeweb.Launcher</start-class>-->
+        <!--<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>-->
+    </properties>
+
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -46,8 +42,17 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.191</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -70,16 +75,9 @@
             <version>2.3.4</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>1.3.2</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>requirejs-babel</artifactId>
+            <version>0.0.8</version>
         </dependency>
     </dependencies>
 
@@ -126,7 +124,7 @@
                     </sources>
                     <babelOptions>
                         <presets>REACT</presets>
-                        <minified>true</minified>
+                        <minified>false</minified>
                     </babelOptions>
                 </configuration>
             </plugin>

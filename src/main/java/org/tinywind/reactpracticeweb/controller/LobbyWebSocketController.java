@@ -1,11 +1,11 @@
 package org.tinywind.reactpracticeweb.controller;
 
-import org.tinywind.reactpracticeweb.model.Lobby;
-import org.tinywind.reactpracticeweb.model.LobbyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
+import org.tinywind.reactpracticeweb.model.Lobby;
+import org.tinywind.reactpracticeweb.model.LobbyRepository;
 
 import java.util.List;
 
