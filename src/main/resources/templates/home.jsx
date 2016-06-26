@@ -41,7 +41,9 @@ React.createClass({
             <hr/>
             <div>
                 <h1>Render on Client side</h1>
-                <div id="container"></div>
+                <div id="container">
+                    "Not React Rendering"
+                </div>
                 <script type="text/babel">
                     {this.containerConstructorString()}
                 </script>
