@@ -2,7 +2,7 @@ var Comment = React.createClass({
     render: function () {
         return (
             <div>
-                <h2>{ this.props.author }</h2>
+                <h4>{ this.props.author }</h4>
                 <p>{ this.props.content } </p>
             </div>
         )
@@ -24,29 +24,26 @@ var CommentList = React.createClass({
 });
 
 React.createClass({
-    containerConstructorString: function () {
-        return "ReactDOM.render(<PlayField />, document.getElementById('container'))";
-    },
+    containerConstructorString: "ReactDOM.render(<PlayField />, document.getElementById('container'));",
     render: function () {
+        var style = {padding: '1em'};
         return (
             <html>
             <Head title={this.props.title}/>
             <body>
-            <div>
-                <h1>Render on Server side</h1>
+            <h1>Render on Server side</h1>
+            <div style={style}>
                 <PlayField/>
                 <CommentList comments={this.props.comments}/>
             </div>
             <hr/>
             <hr/>
-            <div>
-                <h1>Render on Client side</h1>
+            <h1>Render on Client side</h1>
+            <div style={style}>
                 <div id="container">
                     "Not React Rendering"
                 </div>
-                <script type="text/babel">
-                    {this.containerConstructorString()}
-                </script>
+                <script type="text/babel" dangerouslySetInnerHTML={{__html:this.containerConstructorString}}></script>
             </div>
             </body>
             </html>

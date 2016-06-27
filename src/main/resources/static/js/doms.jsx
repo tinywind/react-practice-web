@@ -13,6 +13,8 @@ var Head = React.createClass({
                 <script src="/webjars/react/15.1.0/react.min.js"></script>
                 <script src="/webjars/react/15.1.0/react-dom.min.js"></script>
                 <script src="/webjars/requirejs-babel/0.0.8/babel-5.8.22.min.js"></script>
+                <script src="/js/doms.js"></script>
+                <script src="/js/playfield.js"></script>
             </head>
         )
     }

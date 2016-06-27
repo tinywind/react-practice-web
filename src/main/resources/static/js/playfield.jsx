@@ -3,7 +3,7 @@ var LobbyCard = React.createClass({
         var title = this.props.title;
         return (
             <div className="jumbotron">
-                <h3>{title}</h3>
+                <h5>{title}</h5>
             </div>
         );
     }
@@ -54,7 +54,7 @@ var PlayField = React.createClass({
         }
         return (
             <div className="jumbotron container-fluid">
-                <h2>Lobbies</h2>
+                <h4>Lobbies</h4>
                 {lobbies}
             </div>
         );

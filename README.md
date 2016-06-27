@@ -3,6 +3,9 @@
 * HTML template engine: nashorn(react-dom-server)
 * dynamic html: react js  
 
+![capture](https://raw.githubusercontent.com/tinywind/REACT-PRACTICE-WEB/master/capture.png "comment")
+
+
 # How to Run
 * run se.olapetersson.ReactiveApplication.class
 * add lobby: http://localhost:8080/lobbies/{lobby-name}
@@ -14,14 +17,10 @@
 * jpa
 * h2 database
 * react js
-
 * babel-gen: https://github.com/tinywind/BABEL-CODEGEN
-
-**_BABEL-CODEGEN_ is not deployed to public maven repository, yet.** 
-
+ **_BABEL-CODEGEN_ is not deployed to public maven repository, yet.** 
 * lombok
-
-**If fail compile on any IDE, you check the IDE support _lombok_.** 
+ **If fail compile on any IDE, you check the IDE support _lombok_.** 
 
 # References
 * http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle
