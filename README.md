@@ -18,7 +18,6 @@
 * h2 database
 * react js
 * babel-gen: https://github.com/tinywind/BABEL-CODEGEN
- **_BABEL-CODEGEN_ is not deployed to public maven repository, yet.** 
 * lombok
  **If fail compile on any IDE, you check the IDE support _lombok_.** 
 
